@@ -56,7 +56,7 @@ function App() {
 
     try {
       let parsedInput = JSON.parse(input);
-      const res = await axios.post('https://localhost:3000/bfhl', parsedInput);
+      const res = await axios.post('https://bfhlback149-526d9950f6ea.herokuapp.com/bfhl', parsedInput);
       setResponse(res.data);
     } catch (err) {
       setError(err.message || 'Invalid input or server error');
